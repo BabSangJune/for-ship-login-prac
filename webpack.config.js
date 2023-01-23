@@ -4,9 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin"); // 사용하지 않는 파일들 제거해줌
 
 module.exports = {
+    watch: true,
     entry : { // 각 html에 필요한 entry 파일
         index : './src/index.js',
-        about : './src/about/about.js'
+        imoLogin : './src/login/login.js'
     }, // 시작파일, 여기서 시작해서 사용하는 모듈들을 모두 파악한다.
     output : {  //만들어지는 최종 파일을 내보내는 옵션이다.
         // filename : 'main.js', // 파일 이름
@@ -22,8 +23,12 @@ module.exports = {
             },
             {
                 test: /\.css$/, //확장자가 css 일때,
-                // use: ["style-loader", "css-loader"], // use는 뒤에서부터 읽는다, css-loader로 읽고 style-loader로 넣어준다
-                use: [MiniCssExtractPlugin.loader, "css-loader"], // mini-css-extract-plugin을 style loader 대신 사용
+                use: ["style-loader", "css-loader"], // use는 뒤에서부터 읽는다, css-loader로 읽고 style-loader로 넣어준다
+                // use: [MiniCssExtractPlugin.loader, "css-loader"], // mini-css-extract-plugin을 style loader 대신 사용
+            },
+            {
+                test: /\.svg|png|jpg|gif$/,
+                type: "asset/inline",
             },
         ],
     },
@@ -31,16 +36,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             title : 'Index',
             filename : './index.html',
-            template: './src/index.html'
+            template: './src/index.html',
+            chunks : ['index'],
         }),
         new HtmlWebpackPlugin({
-            title : 'About',
-            filename : './about/about.html',
-            template: './src/about/about.html',
+            title : 'Login',
+            filename : './login/login.html',
+            template: './src/login/login.html',
+            chunks : ['login'],
         }),
-        new MiniCssExtractPlugin({
-            filename : 'style.css'
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename : 'style.css'
+        // }),
         new CleanWebpackPlugin(),
     ],
     devServer: {

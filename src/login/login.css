@@ -1,0 +1,113 @@
+.login-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  aspect-ratio: 16 / 9
+}
+
+.input-wrapper {
+  position: absolute;
+  width: 363px;
+  height: 316px;
+  top: 50%;
+  left: 50%;
+  padding: 75px 45px 55px;
+  margin-top: -223px;
+  margin-left: -226px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    317deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-wrapper p {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-wrapper .input-title__sub {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+.imo-number input {
+  width: 363px;
+  height: 20px;
+  padding: 15px 0 15px 20px;
+  border-radius: 4px;
+  border: solid 1px #c4daff;
+  background: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.imo-number input::placeholder {
+  background: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.imo-number input:focus {
+  padding: 15px 0 15px 20px;
+  border: solid 1px #c4daff;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.imo-number .imo-number-input {
+  margin-bottom: 10px;
+}
+
+.imo-number .imo-number-input__repeat {
+  margin-bottom: 30px;
+}
+
+.imo-login-btn {
+  width: 386px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #004cff;
+  font-size: 18px;
+  font-weight: 1000;
+  border: none;
+  font-family: 'paybooc-Light', sans-serif;
+  box-shadow: none;
+  color: #fff;
+}
+
+.imo-login-btn:disabled {
+  width: 386px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #7dafff;
+  font-size: 18px;
+  font-weight: 1000;
+  border: none;
+  font-family: 'paybooc-Light', sans-serif;
+  box-shadow: none;
+  color: #fff;
+}

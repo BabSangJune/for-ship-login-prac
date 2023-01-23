@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="97" viewBox="0 0 118 97">
+    <g transform="translate(-4448.769 -4337.502)">
+        <g data-name="다각형 2" style="fill:none">
+            <path d="M49.6 15.451a11 11 0 0 1 18.8 0l39.434 64.833A11 11 0 0 1 98.434 97H19.566a11 11 0 0 1-9.4-16.716z" style="stroke:none" transform="translate(4448.769 4337.502)"/>
+            <path d="m59 20.167-.854.48L18.71 85.48c-.098.163-.304.5-.017 1.01s.682.51.872.51h78.868c.19 0 .585 0 .872-.51.287-.51.081-.847-.017-1.01L59.854 20.648c-.087-.144-.292-.48-.854-.48m0-10c3.628 0 7.256 1.76 9.398 5.283l39.434 64.833c4.46 7.33-.818 16.716-9.398 16.716H19.566c-8.58 0-13.857-9.386-9.398-16.716L49.602 15.45c2.142-3.522 5.77-5.284 9.398-5.284z" style="fill:#cbe4ff;stroke:none" transform="translate(4448.769 4337.502)"/>
+        </g>
+        <rect data-name="사각형 13139" width="10" height="35" rx="5" transform="translate(4502.769 4371.502)" style="fill:#cbe4ff"/>
+        <circle data-name="타원 64" cx="5" cy="5" r="5" transform="translate(4502.769 4410.502)" style="fill:#cbe4ff"/>
+    </g>
+</svg>
