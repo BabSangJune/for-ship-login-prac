@@ -4,8 +4,6 @@ import { getCookie, setCookie } from "./module/cookie";
 
 console.log('index.js')
 
-// const infoMessage = document.querySelector('.info-message');
-
 /**
  * Check if there is a configuration file
  * @param infoMessageValue {Object} - Object with information login the configuration file
@@ -58,7 +56,7 @@ const changeInfoMessage = async (info, infoMessage, infoMessageValue) => {
     }, 1500);
 
     if (info === 'check') {
-      setCookie('fileToken', 'fileToken');
+      setCookie('fileToken', true);
       setTimeout(() => {
         location.href = 'login/login.html';
       }, 2000);
