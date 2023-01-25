@@ -1,77 +1,118 @@
 .init-background {
-  background-color: #edeff3;
-  height: 100vh;
-  width: 100vw;
+    background-color: #edeff3;
+    height: 100vh;
+    width: 100vw;
 }
 
 .spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -80px;
-  margin-left: -32px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: 6px solid #0b69ff;
-  animation: spin 0.9s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -32px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 6px solid #0b69ff;
+    animation: spin 0.9s linear infinite;
 }
 
 .spinner::after {
-  content: '';
-  width: 150%;
-  height: 150%;
-  background: linear-gradient(
-    15deg,
-    rgba(237, 239, 243, 1) 0%,
-    rgba(237, 239, 243, 0.7) 40%,
-    rgba(237, 239, 243, 0.5) 60%,
-    rgba(237, 239, 243, 0.3) 80%,
-    rgba(237, 239, 243, 0) 100%
-  );
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -10%);
+    content: '';
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(
+        15deg,
+        rgba(237, 239, 243, 1) 0%,
+        rgba(237, 239, 243, 0.7) 40%,
+        rgba(237, 239, 243, 0.5) 60%,
+        rgba(237, 239, 243, 0.3) 80%,
+        rgba(237, 239, 243, 0) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -10%);
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+}
+
+.error-wrapper .error-msg {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.89;
+    letter-spacing: normal;
+    text-align: center;
+    color: #091e42;
+}
+
+.error-wrapper .error-img {
+    width: 199px;
+    height: 382px;
+    margin-top: 170px;
+    object-fit: contain;
+}
+
+.retry-btn {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 122px;
+    height: 42px;
+    border-radius: 32px;
+    background-color: #091e42;
+    padding-right: 10px;
 }
 
 .info-message {
-  position: absolute;
-  top: 50%;
-  margin-top: 55px;
-  width: 100%;
-  height: 56px;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  text-align: center;
-  color: #091e42;
+    position: absolute;
+    top: 50%;
+    margin-top: 55px;
+    width: 100%;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    color: #091e42;
 }
 
 .contact-wrapper {
-  position: absolute;
-  top: 87%;
-  width: 100%;
-  height: 56px;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: #959aa4;
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    height: 56px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #959aa4;
 }
+
+
 
 .contact-wrapper .contact-message,
 .contact-wrapper .contact-info {
